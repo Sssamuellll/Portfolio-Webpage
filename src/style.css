@@ -1,28 +1,37 @@
-/* Changing the webpage background colour and selecting a font family*/
+/* Changing the webpage background colour and selecting a font family: */
 body
 {
     background-color: rgb(0, 20, 43);
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
 }
 
-/* WebPage Heading, changing its colour and alignment*/
+/* Styling the collective content on the page */
+.contentBlock
+{
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* WebPage Heading, changing its colour and alignment: */
 h1
 {
     top: 0px;
     color: white;
 }
 
-/* webpage header */
+/* Webpage header section styling: */
 #header
 {
     text-align: center;
-    align-items: center;
     background-color: rgb(0, 27, 58);
     padding-top: 10px;
     height: 130px;
 }
 
-/* MenuTab */
+/* Styling the menuTabs: */
 .menuTab
 {
     background-color: rgb(255, 255, 255);
@@ -33,16 +42,36 @@ h1
 
 }
 
-/* MenuLabel */
+/* Styling the menuLabels */
 .menuLabel
 {
     color: rgb(255, 255, 255);
-
 }
 
-/* hovering over elements in the menuLabel class */
-.menuLabel:hover
+/* Styling the about section: */
+#about
 {
-    color: rgb(123, 224, 255);
+    color: white;
+    background-color: rgb(1, 15, 31) ;
+    position: absolute;
+    border-radius: 1rem;
+    top: 155px;
+    height: 30%;
+}
+
+/* Styling the about heading: 2*/
+#aboutHeader
+{
+    position: absolute;
+    left: 10%;
+    width: 60px;
+    text-decoration: underline;
+}
+
+#aboutText
+{
+    position: absolute;
+    top: 50px;
+    left: 10%;
 
 }
