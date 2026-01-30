@@ -3,8 +3,10 @@
     <meta charset="UTF-8"/>
     <meta name="viewport", content="width=device-width, initial-scale=1.0"/>
     <title>Samuel's Portfolio</title>
+    <link rel="stylesheet", href="../siteStyle.css"/>
     <link rel="stylesheet", href="style.css"/>
-    <script src="script.js", defer></script>
+    <script type="module", src="../siteScript.js"></script>
+    <script type="module", src="script.js"></script>
 </head>
 <body>
     <header id="header", class="contentBlock">
@@ -18,21 +20,21 @@
             <h class="menuLabel", id="menuOption2">Menu Element 2</h>
         </div>
     </header>
-    <div id="about" class="contentBlock">
+    <div id="about", class="contentBlock">
         <h2 id="aboutTitle">About Me</h2>
         <p id="aboutText">Hello, this paragraph is about me!</p>
     </div>
-    <div id="project" class="contentBlock">
+    <div id="project", class="contentBlock">
         <h2 id="projectTitle">Projects</h2>
-        <div>
-            <object id="project1", class="project"></object>
-            <object id="project2", class="project"></object>
-            <object id="project3", class="project"></object>
-        </div>
-        <div>
-            <h id="project1" class="projectName">PROJECT NAME</h>
-            <h id="project2" class="projectName">PROJECT NAME</h>
-            <h id="project3" class="projectName">PROJECT NAME</h>
+        <div id="projectGrid">
+            <span class="projectItem">
+                <img id="project1", class="projectImg">
+                <h4>PROJECT TITLE</h4>
+            </span>
+            <span class="projectItem">
+                <img id="project2", class="projectImg">
+                <h4>PROJECT TITLE</h4>
+            </span>
         </div>
     </div>
 </body>

@@ -1,0 +1,49 @@
+/*This is the unifed styling for each webpage.*/
+
+/* Changing the webpage background colour and selecting a font family: */
+body
+{
+    background-color: rgb(0, 20, 43);
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+
+/* Styling the collective content on the page */
+.contentBlock
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+/* Webpage header section styling: */
+#header
+{
+    text-align: center;
+    background-color: rgb(0, 27, 58);
+    padding-top: 10px;
+    height: 130px;
+}
+
+/* WebPage Heading, changing its colour and alignment: */
+h1
+{
+    top: 0px;
+    color: white;
+}
+
+/* Styling the menuTabs: */
+.menuTab
+{
+    background-color: rgb(255, 255, 255);
+    width: 125px;
+    height: 3px;
+    border-radius: 10px;
+
+}
+
+/* Styling the menuLabels */
+.menuLabel
+{
+    color: rgb(255, 255, 255);
+}

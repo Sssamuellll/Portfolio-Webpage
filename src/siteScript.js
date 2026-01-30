@@ -1,7 +1,9 @@
+// Site JavaScript Functionality:
+// Variables:
 // Grabbing all the elements that have the class attribute of menuTab.
 let menuLabels = document.querySelectorAll(".menuLabel");
-console.log(menuLabels);
 
+// Functions:
 // When called, changes the element color dependant on whether the mouse is hovering over it:
 function hover_over_tab(_element, _isHovering)
 {
@@ -14,16 +16,19 @@ function hover_over_tab(_element, _isHovering)
     {
         _element.style.color= "rgb(123, 224, 255)";
         tab.style.height = "5px";
+        _element.style.cursor = "pointer";
+        _element.style.fontWeight = "bold";
     }
     else
     {
         _element.style.color = "rgb(255, 255, 255)";
         tab.style.height = "3px";
+        _element.style.fontWeight = "100";
     };
 
 };
 
-
+// Hovering over menu option tabs:
 // Assigning event listeners to all tabs:
 menuLabels.forEach((mLabel) =>
 {
@@ -31,4 +36,3 @@ menuLabels.forEach((mLabel) =>
     mLabel.addEventListener("mouseenter", function ()  {hover_over_tab(mLabel, true)}, false);
     mLabel.addEventListener("mouseleave", function ()  {hover_over_tab(mLabel, false)}, false);
 });
-

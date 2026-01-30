@@ -1,0 +1,28 @@
+/* Global Project stylesheet: */
+/* Styling the about section: (this is a <div>)*/
+#project
+{
+    text-align: center;
+    color: white;
+    background-color: rgb(1, 15, 31) ;
+    border-radius: 1rem;
+    padding-bottom: 7%;
+}
+
+/* Styling the about heading: 2*/
+#projectTitle
+{
+    padding-top: 1%;
+    text-decoration: underline;
+}
+
+#grade
+{
+    font-size: 12px;
+}
+
+#projectText
+{
+    text-align: left;
+    padding-left: 2%;
+}

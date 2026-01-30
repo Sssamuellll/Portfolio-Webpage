@@ -1,0 +1,75 @@
+
+/* Styling the about section: (this is a <div>)*/
+#about
+{
+    color: white;
+    background-color: rgb(1, 15, 31) ;
+    border-radius: 1rem;
+    padding-bottom: 7%;
+}
+
+/* Styling the about heading: 2*/
+#aboutTitle
+{
+    padding-top: 1%;
+    padding-left: 2%;
+    text-decoration: underline;
+}
+
+#aboutText
+{
+    padding-left: 2%;
+}
+
+/* Styling the project section: (this is a <div>)*/
+#project
+{
+    text-align: center;
+    color: white;
+    background-color: rgb(1, 15, 31) ;
+    border-radius: 1rem;
+    padding-bottom: 2%;
+}
+
+#projectGrid
+{
+    /* turns the container into a flex container, flex-wrap controls whether the flex container is single-line or multi-line*/
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+
+.projectItem
+{
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+
+/* Styling the project heading: 2*/
+#projectTitle
+{
+    padding-top: 1%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.projectName
+{
+}
+
+.projectImg
+{
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.projectImg:hover
+{
+    width: 355px;
+    height: 205px; 
+    outline: white;
+    cursor: pointer;
+}
