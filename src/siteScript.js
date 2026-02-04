@@ -2,7 +2,6 @@
 // Variables:
 // Grabbing all the elements that have the class attribute of menuOption.
 const menuOptions = document.querySelectorAll(".menuOption");
-const projectItems = document.querySelectorAll(".projectItem");
 
 // Functions:
 // When called, changes the element color dependant on whether the mouse is hovering over it:
@@ -62,9 +61,8 @@ menuOptions[0].addEventListener("click", function ()
 {
     window.location.href = "../../../src/home/index.html";
 });
-
-// Retrieving projectItem's titles and assigning them to the project tab dropdown:
-for(let i = 0; i < projectItems.length; i++)
+// Option Menu: CV, when clicked, sends the user to the website homepage:
+menuOptions[menuOptions.length-1].addEventListener("click", function ()
 {
-    menuOptions[1].children[3].children[i].text = projectItems[i].children[1].textContent;
-};
+    window.location.href = "../../../src/cv/index.html";
+});
