@@ -87,3 +87,22 @@
     background-color: rgb(3, 24, 49);
     cursor: pointer;
 }
+
+#additionalInfo
+{
+    color: black;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    bottom: 91px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: yellow;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.projectItem:hover #additionalInfo
+{
+    background-color: white;
+}

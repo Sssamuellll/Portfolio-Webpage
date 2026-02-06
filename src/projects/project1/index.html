@@ -10,41 +10,13 @@
     <script type="module", src="script.js"></script>
 </head>
 <body>
-    <header id="header", class="contentBlock">
-        <h id="heading", class="titles">SAMUEL PORTFOLIO</h>
-        <div id="menuNav">
-            <span class="menuOption", id="menuOption1">
-                <span class="menuTab"></span>
-                <br>
-                <h class="menuLabel">Home</h>
-            </span>
-            <span class="menuOption", id="menuOption2">
-                <span class="menuTab"></span>
-                <br>
-                <h class="menuLabel">Projects</h>
-                <span class="dropdown">
-                    <a href="../../../src/projects/project1/index.html">PROJECT</a>
-                    <a href="../../../src/projects/project2/index.html">PROJECT</a>
-                    <a href="../../../src/projects/project3/index.html">PROJECT</a>
-                    <a href="../../../src/projects/project4/index.html">PROJECT</a>
-                </span>
-            </span>
-            <span class="menuOption", id="menuOption3">
-                <span class="menuTab"></span>
-                <br>
-                <!-- target="_blank" opens link in new tab-->
-                <a href="", target="_blank" class="menuLabel">LinkedIn</a>
-            </span>
-            <span class="menuOption", id="menuOption4">
-                <span class="menuTab"></span>
-                <br>
-                <h class="menuLabel">Curriculum Vitae</h>
-            </span>
-        </div>
-    </header>
+    <header id="header", class="contentBlock"></header>
     <div id="project", class="contentBlock">
         <h id="projectTitle" class="titles">FINAL YEAR PROJECT</h>
         <p id="grade">GRADE: 73.91%</p>
+        <div id="gameContainer">
+            <iframe id="game" src="../../../games/fyp/index.html" controls></iframe>
+        </div>
         <div class="projectDetails"> 
             <h class="projectDetailTopic">Platform |</h>
             <h class="projectDetailInfo">Windows & HTML5</h>
@@ -64,6 +36,10 @@
         <hr>
         <div id="projectOverview">
             <h class="subtitles">OVERVIEW</h>
+            <p class="projectText">
+                The main purpose of showcasing this project was the challenge of embedding it and enabling it to be playable within the site
+                itself rather than hosting it through a third party like itch.io. Here the game is soley hosted by the site itself.
+            </p>
             <p class="projectText">
                 This was my University final year project where I aimed to research and prototype a solution that would help solve the
                 current issues with NPCs (Non-playable character) reponses that can become predictable and lead to break the player's

@@ -3,3 +3,21 @@
 {
     padding-left: 5%;
 }
+
+#game
+{
+    width: 960px;
+    height: 642px;
+    border: 0;
+}
+
+#gameContainer
+{
+    background-color: rgb(2, 18, 37);
+    margin-left: 17%;
+    margin-right: 17%;
+    padding-top: 1%;
+    padding-bottom: 0.5%;
+    border-radius: 1rem;
+    margin-bottom: 30px;
+}

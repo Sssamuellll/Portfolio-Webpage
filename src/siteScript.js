@@ -1,4 +1,40 @@
 // Site JavaScript Functionality:
+
+// Adding in the header as a template literal:
+const content = `
+        <h id="heading", class="titles">SAMUEL PORTFOLIO</h>
+        <div id="menuNav">
+            <span class="menuOption", id="menuOption1">
+                <span class="menuTab"></span>
+                <br>
+                <h class="menuLabel">Home</h>
+            </span>
+            <span class="menuOption", id="menuOption2">
+                <span class="menuTab"></span>
+                <br>
+                <h class="menuLabel">Projects</h>
+                <span class="dropdown">
+                    <a href="../../../src/projects/project1/index.html">Final Year Project</a>
+                    <a href="../../../src/projects/project2/index.html">Game Engine</a>
+                    <a href="../../../src/projects/project3/index.html">Annihilation - C++ Game</a>
+                    <a href="../../../src/projects/project4/index.html">Computer Graphics Programming</a>
+                </span>
+            </span>
+            <span class="menuOption", id="menuOption3">
+                <span class="menuTab"></span>
+                <br>
+                <!-- target="_blank" opens link in new tab-->
+                <a href="", target="_blank" class="menuLabel">LinkedIn</a>
+            </span>
+            <span class="menuOption", id="menuOption4">
+                <span class="menuTab"></span>
+                <br>
+                <h class="menuLabel">Curriculum Vitae</h>
+            </span>
+        </div>
+`;
+document.querySelector("header").innerHTML = content;
+
 // Variables:
 // Grabbing all the elements that have the class attribute of menuOption.
 const menuOptions = document.querySelectorAll(".menuOption");
