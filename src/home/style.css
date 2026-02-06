@@ -1,10 +1,10 @@
 
-/* Styling the about section: (this is a <div>)*/
+/* Styling the about section container: */
 #about
 {
     color: white;
     background-color: rgb(1, 15, 31) ;
-    border-radius: 1rem;
+    border-radius: 1rem; /* rounded border */
     padding-bottom: 7%;
 }
 
@@ -21,7 +21,7 @@
     padding-left: 2%;
 }
 
-/* Styling the project section: (this is a <div>)*/
+/* Styling the project section container:*/
 #project
 {
     text-align: center;
@@ -31,6 +31,7 @@
     padding-bottom: 2%;
 }
 
+/* Styling the project grid, a container that holds all the project items: */
 #projectGrid
 {
     /* turns the container into a flex container, flex-wrap controls whether the flex container is single-line or multi-line*/
@@ -41,8 +42,8 @@
     padding-right: 1%;
 }
 
-
-.projectItem
+/* Styling the project item itself: */
+.ProjectItem
 {
     background-color: rgb(2, 18, 37);
     /* Seperating each item visually from each other*/
@@ -65,11 +66,8 @@
     text-decoration: underline;
 }
 
-.projectName
-{
-}
-
-.projectImg
+/* Styling the project item images: */
+.ProjectImg
 {
     display: block; /*Removes unwanted space below image*/
     justify-self: center; /* centers the image */
@@ -80,29 +78,33 @@
     border-radius: 1rem; /* makes the image corners curved */
 }
 
-.projectItem:hover
+/* Styling for what changes when the user hovers over each project Item: */
+.ProjectItem:hover
 {
     outline-color: white;
     outline-style: solid;
     background-color: rgb(3, 24, 49);
-    cursor: pointer;
+    cursor: pointer; /* Turns the user's cursor into a pointer */
 }
 
+/* Styling the banner found on the final year project image: */
 #additionalInfo
 {
     color: black;
     font-weight: bold;
-    position: relative;
+    position: relative; /* Maintains its position relative to the webpage */
     text-align: center;
     bottom: 91px;
     padding-bottom: 5px;
     padding-top: 5px;
     background-color: yellow;
+    /* Curves only the bottom corners of the banner giving the illusion its part of the image: */
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
 
-.projectItem:hover #additionalInfo
+/* Styling for what changes when the use hovers over the banner: */
+.ProjectItem:hover #additionalInfo
 {
     background-color: white;
 }

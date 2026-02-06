@@ -2,42 +2,43 @@
 
 // Adding in the header as a template literal:
 const content = `
-        <h id="heading", class="titles">SAMUEL PORTFOLIO</h>
+        <h id="heading", class="Titles">SAMUEL PORTFOLIO</h>
         <div id="menuNav">
-            <span class="menuOption", id="menuOption1">
-                <span class="menuTab"></span>
+            <span id="menuOption1", class="MenuOption">
+                <span class="MenuTab"></span>
                 <br>
-                <h class="menuLabel">Home</h>
+                <h class="MenuLabel">Home</h>
             </span>
-            <span class="menuOption", id="menuOption2">
-                <span class="menuTab"></span>
+            <span id="menuOption2", class="MenuOption">
+                <span class="MenuTab"></span>
                 <br>
-                <h class="menuLabel">Projects</h>
-                <span class="dropdown">
+                <h class="MenuLabel">Projects</h>
+                <span class="Dropdown">
                     <a href="../../../src/projects/project1/index.html">Final Year Project</a>
                     <a href="../../../src/projects/project2/index.html">Game Engine</a>
                     <a href="../../../src/projects/project3/index.html">Annihilation - C++ Game</a>
                     <a href="../../../src/projects/project4/index.html">Computer Graphics Programming</a>
                 </span>
             </span>
-            <span class="menuOption", id="menuOption3">
-                <span class="menuTab"></span>
+            <span id="menuOption3", class="MenuOption">
+                <span class="MenuTab"></span>
                 <br>
                 <!-- target="_blank" opens link in new tab-->
-                <a href="", target="_blank" class="menuLabel">LinkedIn</a>
+                <a href="", target="_blank" class="MenuLabel">LinkedIn</a>
             </span>
-            <span class="menuOption", id="menuOption4">
-                <span class="menuTab"></span>
+            <span id="menuOption4", class="MenuOption">
+                <span class="MenuTab"></span>
                 <br>
-                <h class="menuLabel">Curriculum Vitae</h>
+                <h class="MenuLabel">Curriculum Vitae</h>
             </span>
         </div>
 `;
+// Inserting the HTML content into the header element within the DOM:
 document.querySelector("header").innerHTML = content;
 
 // Variables:
 // Grabbing all the elements that have the class attribute of menuOption.
-const menuOptions = document.querySelectorAll(".menuOption");
+const menuOptions = document.querySelectorAll(".MenuOption");
 
 // Functions:
 // When called, changes the element color dependant on whether the mouse is hovering over it:

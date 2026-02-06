@@ -1,7 +1,7 @@
 // Homepage JavaScript functionality:
 // Variables:
 // Grabbing all the elements that have the class attribute of projectItem.
-let projectItems = document.querySelectorAll(".projectItem");
+let projectItems = document.querySelectorAll(".ProjectItem");
 
 // Functions:
 

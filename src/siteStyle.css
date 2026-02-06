@@ -11,7 +11,7 @@ body
     justify-content: center;
 }
 
-/* forcing images to scale with the browser window */
+/* Styling all video and image tags to resize with the browser window: */
 img
 {
     max-width: 100%;
@@ -25,7 +25,7 @@ video
 }
 
 /* Styling the collective content on the page */
-.contentBlock
+.ContentBlock
 {
     margin-left: 10%;
     margin-right: 10%;
@@ -49,7 +49,9 @@ video
     font-style: normal;
     color: white;
 }
-.titles
+
+/* Styling all the elements that hold the titles class to use the imported google font */
+.Titles
 {
     /* Assigning a different font: */
     font-family: "Oswald", sans-serif;
@@ -71,7 +73,7 @@ video
 }
 
 /* Styling the menuTabs: */
-.menuTab
+.MenuTab
 {
     font-size: 3px; /* Height*/
     padding-left: 95%; /* width*/
@@ -81,7 +83,7 @@ video
 }
 
 /* Styling the menuLabels */
-.menuLabel
+.MenuLabel
 {
     /* speration distance */
     margin-left: 5px;
@@ -92,7 +94,7 @@ video
 
 /* Project Drop down menu */
 /* styling drop down content*/
-.dropdown
+.Dropdown
 {
     position: fixed;
     justify-self: center;
@@ -102,7 +104,7 @@ video
 }
 
 /* styling all of the <a>'s in dropdown: */
-.dropdown a
+.Dropdown a
 {
     display: block; /* displays as block on seperate lines rather than all over the place on one line */
     text-align: center;
@@ -119,7 +121,8 @@ video
     color: white;
 }
 
-.dropdown a:hover
+/* Styling what changes when the user hovers over the dropdown options:*/
+.Dropdown a:hover
 {
     background-color: rgb(3, 24, 49);
     border-color: rgb(3, 24, 49);
@@ -127,7 +130,7 @@ video
 }
 
 /* Webpage footer section styling: */
-#footer
+footer
 {
     text-align: center;
     background-color: rgb(0, 27, 58);
