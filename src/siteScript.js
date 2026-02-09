@@ -14,9 +14,9 @@ const content = `
                 <br>
                 <h class="MenuLabel">Projects</h>
                 <span class="Dropdown">
-                    <a href="../../../src/projects/project1/index.html">Final Year Project</a>
-                    <a href="../../../src/projects/project2/index.html">Game Engine</a>
-                    <a href="../../../src/projects/project3/index.html">Annihilation - C++ Game</a>
+                    <a href="../../../src/projects/project1/index.html">Space Web Game</a>
+                    <a href="../../../src/projects/project2/index.html">Final Year Project (Embedded Game)</a>
+                    <a href="../../../src/projects/project3/index.html">Game Engine</a>
                     <a href="../../../src/projects/project4/index.html">Computer Graphics Programming</a>
                 </span>
             </span>

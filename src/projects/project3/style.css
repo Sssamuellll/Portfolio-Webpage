@@ -1,1 +1,6 @@
-/* Project 3 Stylesheet: */
+/* Project 2 Stylesheet: */
+/* Styling/centering the image */
+#umlDiagram
+{
+    justify-self: center;
+}

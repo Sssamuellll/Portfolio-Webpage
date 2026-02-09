@@ -1,26 +1,7 @@
 /* Project 1 Stylesheet: */
 /* Styling the instructions on how to play the game */
-#tutorial
+#myCanvas
 {
-    padding-left: 5%;
-}
-
-/* Styling the game window: */
-#game
-{
-    width: 960px;
-    height: 642px;
-    border: 0; /* removes the initial border around the window */
-}
-
-/* Styling the game container: */
-#gameContainer
-{
-    background-color: rgb(2, 18, 37);
-    margin-left: 17%;
-    margin-right: 17%;
-    padding-top: 1%;
-    padding-bottom: 0.5%;
-    border-radius: 1rem;
-    margin-bottom: 30px;
+    display: block;
+    margin: 0 auto;
 }

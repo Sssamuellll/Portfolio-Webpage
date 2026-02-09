@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport", content="width=device-width, initial-scale=1.0"/>
-    <title>Project: Game Engine</title>
+    <title>Project: Final Project</title>
     <link rel="stylesheet", href="../../siteStyle.css"/>
     <link rel="stylesheet", href="../projectStyles.css"/>
     <link rel="stylesheet", href="style.css"/>
@@ -12,45 +12,56 @@
 <body>
     <header id="header", class="ContentBlock"></header>
     <div id="project", class="ContentBlock">
-        <h id="projectTitle" class="Titles">GAME ENGINE</h>
-        <p id="grade">GRADE: 74%</p>
-        <video width="492", height="424" controls class="ProjectVideo">
-            <source src="../../../assets/Game_Engine_Demo.mp4" type="video/mp4">
-            Your browser doesn't support the video tag being displayed.
-        </video>
+        <h id="projectTitle" class="Titles">FINAL YEAR PROJECT</h>
+        <p id="grade">GRADE: 73.91%</p>
+        <div id="gameContainer">
+            <iframe id="game" src="../../../games/fyp/index.html" controls></iframe>
+        </div>
         <div class="ProjectDetails"> 
             <h class="ProjectDetailTopic">Platform |</h>
-            <h class="ProjectDetailInfo">Windows</h>
+            <h class="ProjectDetailInfo">Windows & HTML5</h>
             <br>    
             <h class="ProjectDetailTopic">Engine |</h>
-            <h class="ProjectDetailInfo">None, C++</h>
+            <h class="ProjectDetailInfo">Unity, C#</h>
             <br>    
             <h class="ProjectDetailTopic">Project Duration |</h>
-            <h class="ProjectDetailInfo">September 2024 - January 2025</h>
+            <h class="ProjectDetailInfo">Februrary 2025 - May 2025</h>
             <br>    
             <h class="ProjectDetailTopic">Tools Used |</h>
-            <h class="ProjectDetailInfo">Visual Studio, GitHub, Cmake, SDL2, OpenGL, OpenAL, GLM, Doxygen, Umbrello (UML), Adobe Photoshop</h>
+            <h class="ProjectDetailInfo">Visual Studio, GitHub, Adobe Photoshop, Mixamo, Unity Asset Store</h>
             <br>    
             <h class="ProjectDetailTopic">Methodologies |</h>
-            <h class="ProjectDetailInfo">Entity Component System (ECS), Object Oriented Programming, Matrices</h>
+            <h class="ProjectDetailInfo">Finite State Machines, Object Oriented Programming</h>
         </div>
         <hr>
         <div id="projectOverview">
             <h class="Subtitles">OVERVIEW</h>
             <p class="ProjectText">
-                This is a small game engine with the capabilities to create more complex games. This is due to how the foundation of the 
-                engine was developed using the Entity Component System (ECS) architecture approach in conjunction with various labraries. 
-                This approach favours composition over inheritance although, Object Oriented Programming and inheritance are still 
-                utilised, they are not as prominent.
+                The main purpose of showcasing this project was the challenge of embedding it and enabling it to be playable within the site
+                itself rather than hosting it through a third party like itch.io. Here the game is soley hosted by the site itself.
             </p>
-            <h class="Subtitles">UML DIAGRAM</h>
             <p class="ProjectText">
-                Below is a UML diagram breakdown of the game engine developed in its entirety, illustrating all its moving parts and
-                how they are connected and work with each other.
+                This was my University final year project where I aimed to research and prototype a solution that would help solve the
+                current issues with NPCs (Non-playable character) reponses that can become predictable and lead to break the player's
+                immersion. The solution proposed is an Emotional Component system that can be integrated into the base mechanics of NPCs.
+                This system aims to maintain player immersion through simulating accurate reponses to player actions. Rather than 
+                instantaneously transitioning from one extreme state to another. The NPC is eased into a response based on their current
+                weighted emotions. Extreme responses are possible but require the player to be persistent in their actions towards the NPC.
             </p>
-            <div id="umlDiagram">
-                <img src="../../../assets/GEP UML.png">
-            </div>
+            <p class="ProjectText">
+                The application is a demonstration that is split into two artefacts. Artefact 1 aims to demonstrate NPCs with no Emotional
+                Component whereas, Artefact 2 showcases the same NPCs and environment with the Emotional Component integrated within the NPCs.
+                There is no established end goal, this application is only a demonstration prototype.
+            </p>
+            <h class="Subtitles">HOW TO PLAY</h>
+            <ul id="tutorial" class="ProjectText">
+                <li>Use the keys W,A,S,D to move.</li>
+                <li>Use SPACE or LEFT-SHIFT to sprint.</li>
+                <li>Use the LEFT-MOUSE-BUTTON to navigate the various menus and attack objects.</li>
+                <li>Use the ESCAPE key to open the pause menu.</li>
+                <li>Use the I key to interact with the NPCs when nearby them (NPS will only acknowledge interactions once stationary 
+                    near the player).</li>
+            </ul>
         </div>
     </div>
     <footer class="ContentBlock"></footer>

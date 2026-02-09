@@ -114,7 +114,7 @@
 }
 
 /* Styling the banner found on the final year project image: */
-#additionalInfo
+.additionalInfo
 {
     color: black;
     font-weight: bold;
@@ -123,14 +123,14 @@
     bottom: 91px;
     padding-bottom: 5px;
     padding-top: 5px;
-    background-color: yellow;
+    background-color: rgba(255, 255, 0, 0.459);
     /* Curves only the bottom corners of the banner giving the illusion its part of the image: */
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
 
 /* Styling for what changes when the use hovers over the banner: */
-.ProjectItem:hover #additionalInfo
+.ProjectItem:hover .additionalInfo
 {
-    background-color: white;
+    background-color: rgba(44, 206, 255, 0.459);
 }
