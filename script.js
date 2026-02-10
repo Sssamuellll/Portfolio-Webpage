@@ -13,6 +13,6 @@ projectItems.forEach((item) =>
     {
         // Retrieves the projectItem's image element id and uses it to transport the user to the corresponding page:
         const itemId = item.children[0].getAttribute("id");
-        window.location.href = `../projects/${itemId}/index.html`;
+        window.location.href = `src/projects/${itemId}/index.html`;
     });
 });

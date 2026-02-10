@@ -1,1 +1,1 @@
-// Project 1 JavaScript Functionality:
+// Project 3 JavaScript Functionality:
