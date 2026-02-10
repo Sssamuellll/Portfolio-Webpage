@@ -14,10 +14,10 @@ const content = `
                 <br>
                 <h class="MenuLabel">Projects</h>
                 <span class="Dropdown">
-                    <a href="../../../src/projects/project1/index.html">Space Web Game</a>
-                    <a href="../../../src/projects/project2/index.html">Final Year Project (Embedded Game)</a>
-                    <a href="../../../src/projects/project3/index.html">Game Engine</a>
-                    <a href="../../../src/projects/project4/index.html">Computer Graphics Programming</a>
+                    <a href="/src/projects/project1/index.html">Space Web Game</a>
+                    <a href="/src/projects/project2/index.html">Final Year Project (Embedded Game)</a>
+                    <a href="/src/projects/project3/index.html">Game Engine</a>
+                    <a href="/src/projects/project4/index.html">Computer Graphics Programming</a>
                 </span>
             </span>
             <span id="menuOption3", class="MenuOption">
@@ -96,10 +96,10 @@ menuOptions.forEach((mOption) =>
 // Option Menu: Home, when clicked, sends the user to the website homepage:
 menuOptions[0].addEventListener("click", function ()
 {
-    window.location.href = "../../../src/home/index.html";
+    window.location.href = "/index.html";
 });
 // Option Menu: CV, when clicked, sends the user to the website homepage:
 menuOptions[menuOptions.length-1].addEventListener("click", function ()
 {
-    window.location.href = "../../../src/cv/index.html";
+    window.location.href = "/src/cv/index.html";
 });
