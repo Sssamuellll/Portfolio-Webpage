@@ -5,3 +5,13 @@
     display: block;
     margin: 0 auto;
 }
+
+/* Styling game window container: */
+#gameContainer
+{
+    /* moving the game canvas edges away from the edges of the project div: */
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    padding-top: 1%;
+}

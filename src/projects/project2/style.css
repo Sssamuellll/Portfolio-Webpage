@@ -7,20 +7,25 @@
 
 /* Styling the game window: */
 #game
-{
+{   
     width: 960px;
     height: 642px;
+    /* defining where the transform origin is, determines how the elements is transformed. */
+    transform-origin: left top;
     border: 0; /* removes the initial border around the window */
 }
 
 /* Styling the game container: */
 #gameContainer
 {
+    justify-self: center;
     background-color: rgb(2, 18, 37);
-    margin-left: 17%;
-    margin-right: 17%;
-    padding-top: 1%;
-    padding-bottom: 0.5%;
-    border-radius: 1rem;
-    margin-bottom: 30px;
+    /* Defining the size of the container: */
+    max-width: 70%;
+    padding-top: 0.2%;
+    margin-bottom: 2%;
+    border-radius: 0.25rem;
+    outline-color: rgb(2, 18, 37);
+    outline-style: solid;
+    outline-width: 10px;
 }

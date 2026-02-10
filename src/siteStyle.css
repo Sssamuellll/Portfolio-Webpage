@@ -24,6 +24,12 @@ video
     height: auto;
 }
 
+canvas
+{
+    max-width: 100%;
+    height: auto;
+}
+
 /* Styling the collective content on the page */
 .ContentBlock
 {
@@ -115,7 +121,7 @@ video
 /* styling drop down content*/
 .Dropdown
 {
-    position: fixed;
+    position: absolute;
     justify-self: center;
     padding-left: 3.5%;
     z-index: 999;
