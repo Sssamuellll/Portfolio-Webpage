@@ -296,12 +296,23 @@ function player_movement(_event)
 // Spawns a wave of enemies:
 function spawn_enemy_wave()
 {
-    let x = 300;
-    let enemyAmount = 3;
+    let defaultX = 250
+    let x = defaultX;
+    let y = 200;
+    let enemyAmount = 10;
+    let rowCount = 5; // Amount of enemies allowed on each row:
     // Spawns 3 enemies:
     for(let e = 0; e < enemyAmount; e++)
     {
-        game.spawn_enemy(x, 200);
+        // Ensures enemies spawned are inline with the rowCount:
+        if((e > 0) && (e % rowCount == 0))
+        {
+            x = defaultX
+            y -= 75
+        }
+        // Spawns the enemy:
+        game.spawn_enemy(x, y);
+        // Updates the x for the next enemy to spawn:
         x += 75;
     }
 }
@@ -318,13 +329,17 @@ function run_game()
         game.refresh_screen();
         // User Input event listener (listening for keydown):
         document.onkeydown = player_movement;
-        for(let b = 0; b < game.bullets.length; b++)
+        // While player lives are greater than 0, move the entities:
+        if(player.lives > 0)
         {
-            game.bullets[b].move_entity(0, -1);
-        }
-        for(let e = 0; e < game.enemies.length; e++)
-        {
-            game.enemies[e].move_entity(0, 1);
+            for(let b = 0; b < game.bullets.length; b++)
+            {
+                game.bullets[b].move_entity(0, -1);
+            }
+            for(let e = 0; e < game.enemies.length; e++)
+            {
+                game.enemies[e].move_entity(0, 1);
+            }
         }
 
         // Collision checking all bullets with each enemy as well as the player:
@@ -335,7 +350,10 @@ function run_game()
             {
                 console.log("PLAYER HIT!");
                 game.enemies[e].destroy();
-                player.lives -= 1;
+                if(player.lives > 0)
+                {
+                    player.lives -= 1;
+                }
             }
             for(let b = 0; b < game.bullets.length; b++)
             {
